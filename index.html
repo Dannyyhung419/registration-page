@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Student registration form for Team Core X">
+  <title>Student Registration | Team Core X</title>
+</head>
+<body>
+
+  <header>
+    <h1>Team Core X</h1>
+    <p>Student Registration Form</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Register Here</h2>
+      <p>Please fill in all fields. Fields marked * are required.</p>
+
+      <form action="#" method="post">
+
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <p>
+            <label for="name">Full Name *</label><br>
+            <input type="text" id="name" name="name" placeholder="e.g. Adewale John Bello" autocomplete="name" required>
+          </p>
+
+          <p>
+            <label for="matric">Matric No *</label><br>
+            <input type="text" id="matric" name="matric" placeholder="e.g. 2024/0001" required>
+          </p>
+
+          <p>
+            <label for="email">Email *</label><br>
+            <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+          </p>
+
+          <p>
+            <label for="phone">Phone No *</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="08012345678" pattern="[0-9]{11}" title="Enter an 11-digit phone number" autocomplete="tel" required>
+          </p>
+
+          <p>Gender *</p>
+          <p>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Academic Information</legend>
+
+          <p>
+            <label for="department">Department *</label><br>
+            <select id="department" name="department" required>
+              <option value="" selected disabled>-- Select Department --</option>
+              <option value="computer-science">Computer Science</option>
+              <option value="information-technology">Information Technology</option>
+              <option value="information-system">Information System</option>
+              <option value="information-communication-technology">Information Communication Technology</option>
+              <option value="cyber-security">Cyber Security</option>
+              <option value="data-science">Data Science</option>
+              <option value="software-engineering">Software Engineering</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="programme">Programme *</label><br>
+            <select id="programme" name="programme" required>
+              <option value="" selected disabled>-- Select Programme --</option>
+              <option value="full-time">Full Time</option>
+              <option value="weekday">Weekday</option>
+              <option value="weekend">Weekend</option>
+            </select>
+          </p>
+        </fieldset>
+
+        <p>
+          <button type="submit">Submit</button>
+        </p>
+
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Adewunmi Anjolaoluwa Daniel. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
